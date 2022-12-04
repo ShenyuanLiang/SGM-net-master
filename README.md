@@ -10,7 +10,7 @@
 
 
 #### Step 2 Pre-configuration of system distributions and python environment:
-- The code is tested on Ubuntu 20.04 machine with cuDNN support. In order to run the code, one needs an 24GB Nvidia GPU with CUDA 11.6 support. The code does not support CPU execution currently.
+- The code is tested on Ubuntu 20.04 machine with cuDNN7 support. In order to run the code, one needs an 24GB Nvidia GPU with CUDA 11.6 support. The code does not support CPU execution currently.
 - Set up system distributions and python packages needed. For system distritions, please check **environment.yaml** for system distribution configurations and for pthon packages, please check **requirements.txt**.  
 
 
