@@ -10,7 +10,7 @@
 
 
 #### Step 2 Pre-configuration of system distributions and python environment:
-- The code is tested on Ubuntu 20.04 machine. In order to run the code, one needs an 24GB Nvidia GPU with CUDA support. The code does not support CPU execution currently.
+- The code is tested on Ubuntu 20.04 machine with cuDNN support. In order to run the code, one needs an 24GB Nvidia GPU with CUDA 11.6 support. The code does not support CPU execution currently.
 - Set up system distributions and python packages needed. For system distritions, please check **environment.yaml** for system distribution configurations and for pthon packages, please check **requirements.txt**.  
 
 
@@ -37,7 +37,7 @@
 ```{r, engine='python'}
     python EG.py --Inference --exp-model=./TRAINED_MODEL_PATH --exp-evald=./TESTING_DATA_PATH --exp-savep=./DIRECTORY_TO_SAVE_OUTPUTFILE --file-name=./NAME_OF _THE_TEXTFILE
 ```
-- One example of computing the mean graph shape. Run first command to get all arguments of this script. Then run the second command and set all the arguments to your own preferences. Be aware for fast affinity matrix computation, one needs to embed a matlab engine. If speed is not the concern, please replace the matlab functions for computing $$K_p$$ and $$K_e$$ with functions defined in script *Shape/Statistics*
+- One example of computing the mean graph shape. Run first command to get all arguments of this script. Then run the second command and set all the arguments to your own preferences. Be aware for fast affinity matrix computation, one needs to embed a matlab engine. If speed is not the concern, please replace the matlab functions for computing $K_p$ and $K_e$ with functions defined in script *Shape/Statistics*
 ```{r, engine='python'}
     python compute_mean.py --help
 ```
@@ -45,7 +45,7 @@
     python compute_mean.py --model-path='~/' --model-type='a string value' --I=int ...
 ```
 #### Step 5 Inferences like graph geodescis and distance computation.
-- **Please refer to [Guo](https://github.com/xiaoyangstat/statistical-shape-analysis-of-elastic-graphs.git) for the computations**.
+- Please refer to [Guo](https://github.com/xiaoyangstat/statistical-shape-analysis-of-elastic-graphs.git) for the computations.
 
 ## Acknowledgements
 Our code is inspired by this repo [Wang](https://github.com/Thinklab-SJTU/ThinkMatch.git). Please cite Guo and Wang's work if use our code. 
