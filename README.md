@@ -15,7 +15,7 @@
 
 
 #### Step 3 Checking datasets and arguments
-- Download datasets (if needed) from [Training sets](https://www.dropbox.com/sh/ap2fy0560usui1c/AACnExI501GkZGYGpC2-GU9Da?dl=0) and [Testing sets](https://www.dropbox.com/scl/fo/d316nxhwc75wyvcoobl2i/h?dl=0&rlkey=va9jidmntohz7h0zzft0j7nky)
+- Download datasets (if needed) from [Training sets](https://www.dropbox.com/sh/ap2fy0560usui1c/AACnExI501GkZGYGpC2-GU9Da?dl=0) and [Testing sets](https://www.dropbox.com/scl/fo/d316nxhwc75wyvcoobl2i/h?dl=0&rlkey=va9jidmntohz7h0zzft0j7nky). Notice that the provided datasets are original synthetic pairs. For customized datasets. One needs to form graph in pairs with given affinities and connectivity matrices. Please organize the pairs the same as the example we provided.
 - Download pre-trained models for datasets provided above (if needed) from [model](https://www.dropbox.com/s/ps2pq15hr20fx9u/sim.pt?dl=0)
 - Run command below to check the the arguments. It outputs a lsit arguments used to configure the training and testing experiments.
 ```{r, engine='python'}
@@ -45,7 +45,7 @@
     python compute_mean.py --model-path='~/' --model-type='a string value' --I=int ...
 ```
 #### Step 5 Inferences like graph geodescis and distance computation.
-- Please refer to [Guo](https://github.com/xiaoyangstat/statistical-shape-analysis-of-elastic-graphs.git) for the computations.
+- After getting the registrations from step 4, please refer to [Guo](https://github.com/xiaoyangstat/statistical-shape-analysis-of-elastic-graphs.git) for the computations.
 
 ## Acknowledgements
 Our code is inspired by this repo [Wang](https://github.com/Thinklab-SJTU/ThinkMatch.git). Please cite Guo and Wang's work if use our code. 
