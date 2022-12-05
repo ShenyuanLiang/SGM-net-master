@@ -102,4 +102,4 @@ dependencies:
     - werkzeug==2.2.2
     - xlrd==2.0.1
     - xlwt==1.3.0
-prefix: /home/shenyuan/anaconda3/envs/graph-matching2
+prefix: ~/anaconda3/envs/graph-matching2
